@@ -1,7 +1,12 @@
-const Home = () => {
-    return(
-        <h1>PAGE HOME</h1>
-    )
-}
+import DashboardVoyage from "../components/home/dashboardVoyage";
 
-export default Home
+const Home = () => {
+  return (
+    <>
+      <h1>PAGE HOME</h1>
+      <DashboardVoyage />
+    </>
+  );
+};
+
+export default Home;

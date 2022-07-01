@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkprojetvoyage=self.webpackChunkprojetvoyage||[]).push([[656],{656:function(e,n,r){r.r(n);var t,u=r(168),a=(r(791),r(31)),c=r(184),o=a.ZP.h1(t||(t=(0,u.Z)([""])));n.default=function(){return(0,c.jsx)(o,{children:"FAQ"})}}}]);
+//# sourceMappingURL=656.139beae0.chunk.js.map

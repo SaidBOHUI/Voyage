@@ -1,20 +1,8 @@
 Said Bohui, BA23.1
 Maxime Herblot, BA23.1
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- ---------------------------------------------React------------------------------------------------------------ -->
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
