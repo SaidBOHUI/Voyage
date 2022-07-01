@@ -55,10 +55,10 @@ let informationVoyage = [
 const DashboardVoyage = () => {
   const [listVoyage, setListVoyage] = useState(informationVoyage);
 
-  let handleOnChangeInput = (event)=> {
-    console.log(event.target.value)
-    setListVoyage(listVoyage)
-  }
+  let handleOnChangeInput = (event) => {
+    console.log(event.target.value);
+    setListVoyage(listVoyage);
+  };
   return (
     <>
       <input type="text" onChange={handleOnChangeInput}></input>

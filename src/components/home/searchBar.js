@@ -1,5 +1,3 @@
-const searchBar = ()=> {
+const searchBar = () => {};
 
-}
-
-export default searchBar
+export default searchBar;

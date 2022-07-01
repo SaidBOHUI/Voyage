@@ -6,9 +6,9 @@
 }
 
 .dashboardVoyage {
-    display: flex;
-    margin: 5%;
-    flex-wrap: wrap;
+  display: flex;
+  margin: 5%;
+  flex-wrap: wrap;
 }
 .cardVoyage {
   border: 2px solid black;
