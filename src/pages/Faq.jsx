@@ -18,6 +18,7 @@ const Faq = () => {
 )}
 
 const Container = styled.div`
+color: #051474;
 /* background-color: #1488AD; */
 `
 
