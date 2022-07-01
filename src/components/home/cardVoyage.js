@@ -1,8 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const CardVoyage = (props) => {
-  const [information, setInformation] = useState(props.information);
-  console.log(information,"single")
+    
+  let information = props.information;
   return (
     <>
       <div className="cardVoyage">
