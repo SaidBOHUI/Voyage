@@ -1,29 +1,25 @@
 import React from "react";
 import styled from "styled-components";
 
-const LineQuestion = (question, response) => {
+const LineQuestion = (props) => {
     return(
-        <Line>
-            <Item>
-                <h3>{question}</h3>
-                <p>{response}</p>
-            </Item>
-            <Item>
-                <h3>{question}</h3>
-                <p>{response}</p>
-            </Item>
-            <Item>
-                <h3>{question}</h3>
-                <p>{response}</p>
-            </Item>
-        </Line>
+        <Item>
+            <h2>{props.question}</h2>
+            <p>{props.response}</p>
+        </Item>
     )
 }
 
-const Line = styled.div`
+const Item = styled.div`
+
+    h2{
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    p{
+        margin-bottom: 3rem;
+    }
 `
 
-const Item = styled.div`
-`
 
 export default LineQuestion
