@@ -33,7 +33,7 @@ let informationVoyage = [
     rating: 3.6,
   },
   {
-    lieu: "Paris, France",
+    lieu: "Reims, France",
     type: "Professionel",
     tarif: 254,
     rating: 4.2,
@@ -52,20 +52,29 @@ let informationVoyage = [
   },
 ];
 
+// let listCardVoyage = listVoyage.map((information) => {
+//   return <CardVoyage information={information} />;
+// });
+
 const DashboardVoyage = () => {
   const [listVoyage, setListVoyage] = useState(informationVoyage);
 
   let handleOnChangeInput = (event) => {
-    console.log(event.target.value);
-    setListVoyage(listVoyage);
+    let inputVal = event.target.value;
+    let voyage = informationVoyage.filter((information) => {
+      return information.lieu.includes(inputVal);
+    });
+    console.log(voyage, "list change handle");
+    setListVoyage(voyage);
   };
   return (
     <>
       <input type="text" onChange={handleOnChangeInput}></input>
       <div className="dashboardVoyage">
-        {informationVoyage.map((information) => {
-          return <CardVoyage information={information} />;
-        })}
+        {console.log(listVoyage)}
+        {listVoyage.map((information, index) => (
+          <CardVoyage key={index} information={information} />
+        ))}
       </div>
     </>
   );
