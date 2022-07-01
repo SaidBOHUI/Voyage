@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const CardVoyage = (props) => {
   const [information, setInformation] = useState(props.information);
-  console.log(information)
+  console.log(information);
   return (
     <>
       <div className="card">
