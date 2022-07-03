@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import styled from 'styled-components';
 import pic from '../../images/paysage_test.jpeg'
 
@@ -7,14 +6,7 @@ const CardVoyage = (props) => {
   let information = props.information;
   return (
     <>
-      {/* <div className="cardVoyage">
-        <h3>{information.lieu}</h3>
-        <p>{information.type}</p>
-        <p>Prix : {information.tarif}</p>
-        <p>Note : {information.rating}</p>
-      </div> */}
         <Carte>
-          {/* <Image><img src="../images/paysage_test.jpeg"></img></Image> */}
           <Img src={pic} width={500} alt="i" />
           <div>
               <p>lieu : {information.lieu}</p>

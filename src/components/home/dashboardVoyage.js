@@ -3,11 +3,6 @@ import CardVoyage from "./cardVoyage";
 import informationVoyage from "./infosVoyage";
 import styled from "styled-components";
 
-// console.log(informationVoyage);
-
-// let listCardVoyage = listVoyage.map((information) => {
-//   return <CardVoyage information={information} />;
-// });
 
 const DashboardVoyage = () => {
   const [listVoyage, setListVoyage] = useState(informationVoyage);

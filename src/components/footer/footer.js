@@ -14,9 +14,6 @@ const Foot = styled.footer`
     padding-top: 1rem;
 
     bottom: 0;
-    /* fonctionne sur Accueil mais pas sur formules */
-    /* position: absolute;
-    bottom:0;   */
 `
 
 const Author = styled.div`

@@ -56,10 +56,4 @@ padding: 1rem 2rem;
     margin: 0 2rem;
   }
 `
-
-
-// const List = styled.ul`
-// display: flex;
-// space
-// `
 export default Header;
