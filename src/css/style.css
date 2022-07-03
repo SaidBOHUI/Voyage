@@ -21,6 +21,6 @@ nav{
   background-color: #051474;
 }
 .lienNav a:hover{
-  color : green;
+  color : #EFB85B;
   transition: 1s;
 }
