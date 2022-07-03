@@ -26,4 +26,6 @@ const LineCard = () => {
         display: flex;
         justify-content: space-between;
     `
+
+
 export default LineCard

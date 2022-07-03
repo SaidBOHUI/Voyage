@@ -4,12 +4,12 @@ const Foot = styled.footer`
     display: flex;
     justify-content: space-between;
     width: 100% ;
-    margin: auto;
+    /* margin: auto; */
     font-size: larger;
     font-weight: 1000;  
     background-color:#051474;
-    position: relative;
-    bottom: 0;
+    /* position: absolute;
+    bottom: 0; */
     height: 7vh;
     padding-top: 1rem;
 

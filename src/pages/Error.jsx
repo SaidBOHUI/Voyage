@@ -10,9 +10,7 @@ function Error() {
       <Link to="/" title="Revenir sur la page principale">
         Retour sur la page d&#39;accueil
       </Link>
-
       <br />
-
       <code>
         La page suivante : <b>{location.pathname}</b> est introuvable
       </code>

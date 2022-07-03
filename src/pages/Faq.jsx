@@ -1,9 +1,12 @@
 import React from "react";
 import styled from "styled-components"
+// import Header from "../components/header/header";
+// import Footer from "../components/footer/footer";
 import LineQuestion from "../components/LineQuestion";
 
 const Faq = () => {
     return(
+        <>
         <Container>
             <Title>FAQ</Title>
             <AllQuestions>
@@ -15,6 +18,7 @@ const Faq = () => {
                 <LineQuestion question="Comment annuler une réservation" response="Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quibusdam, totam autem dolor ipsum neque iste alias cupiditate odio placeat inventore aut sapiente veritatis perferendis nobis eaque aliquid eum assumenda.Voluptate modi beatae sunt eligendi porro fuga, rem, animi cupiditate vitae odit aut ipsa quae vel nostrum molestias, dolorum debitis! Optio pariatur iusto consequuntur voluptatem voluptatibus delectus natus officia atque. Molestias tempore qui corporis, similique cum vel, nulla libero distinctio sed quidem ad deleniti rem labore vitae ratione est voluptatibus animi ducimus? Eius officia facilis ab esse consequatur impedit maxime?"/>
             </AllQuestions>
         </Container>
+        </>
 )}
 
 const Container = styled.div`

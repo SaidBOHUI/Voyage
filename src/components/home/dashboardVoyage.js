@@ -1,56 +1,9 @@
 import { useState } from "react";
 import CardVoyage from "./cardVoyage";
+import informationVoyage from "./infosVoyage";
+import styled from "styled-components";
 
-let informationVoyage = [
-  {
-    lieu: "Paris, France",
-    type: "Professionel",
-    tarif: 20,
-    rating: 3.6,
-  },
-  {
-    lieu: "Paris, France",
-    type: "Professionel",
-    tarif: 254,
-    rating: 4.2,
-  },
-  {
-    lieu: "Paris, France",
-    type: "Professionel",
-    tarif: 354,
-    rating: 4.6,
-  },
-  {
-    lieu: "Paris, France",
-    type: "Professionel",
-    tarif: 204,
-    rating: 3.6,
-  },
-  {
-    lieu: "Paris, France",
-    type: "Professionel",
-    tarif: 20,
-    rating: 3.6,
-  },
-  {
-    lieu: "Reims, France",
-    type: "Professionel",
-    tarif: 254,
-    rating: 4.2,
-  },
-  {
-    lieu: "Paris, France",
-    type: "Professionel",
-    tarif: 354,
-    rating: 4.6,
-  },
-  {
-    lieu: "Paris, France",
-    type: "Professionel",
-    tarif: 204,
-    rating: 3.6,
-  },
-];
+// console.log(informationVoyage);
 
 // let listCardVoyage = listVoyage.map((information) => {
 //   return <CardVoyage information={information} />;
@@ -60,18 +13,20 @@ const DashboardVoyage = () => {
   const [listVoyage, setListVoyage] = useState(informationVoyage);
 
   let handleOnChangeInput = (event) => {
-    let inputVal = event.target.value;
+    let inputVal = event.target.value.toLowerCase();
+    // console.log(inputVal);
     let voyage = informationVoyage.filter((information) => {
-      return information.lieu.includes(inputVal);
+      console.log(information);
+      return information.lieu.toLowerCase().includes(inputVal);
     });
     console.log(voyage, "list change handle");
     setListVoyage(voyage);
   };
-  return (
+  return(
     <>
-      <input type="text" onChange={handleOnChangeInput}></input>
+      <Search><input type="text" onChange={handleOnChangeInput} placeholder="Cherchez votre destination"></input></Search>
       <div className="dashboardVoyage">
-        {console.log(listVoyage)}
+        {/* {console.log(listVoyage)} */}
         {listVoyage.map((information, index) => (
           <CardVoyage key={index} information={information} />
         ))}
@@ -79,5 +34,19 @@ const DashboardVoyage = () => {
     </>
   );
 };
+
+const Search = styled.div`
+text-align: center;
+  input{
+    height: 3rem;
+    border: #051474 solid 2px;
+    border-radius: 40px;
+    width: 20vw;
+    padding:0 1rem
+  }
+padding: 2rem 0;
+
+
+`
 
 export default DashboardVoyage;

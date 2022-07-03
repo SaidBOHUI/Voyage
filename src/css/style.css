@@ -7,17 +7,20 @@
 
 .dashboardVoyage {
   display: flex;
-  margin: 5%;
+  margin: auto 5%;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
-.cardVoyage {
-  border: 2px solid black;
-  text-align: center;
-  padding: 1% 2%;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  border-radius: 10px;
-  margin: 25px;
+/* .cardVoyage {
+} */
+
+a{text-decoration: none;
+color: white;}
+
+nav{
+  background-color: #051474;
+}
+.lienNav a:hover{
+  color : green;
+  transition: 1s;
 }
